@@ -6,7 +6,7 @@
 <meta name=author content="">
 <link rel=icon href=/Content/AssetsBS3/img/favicon.ico>
 <title>Dream Challenge Leaderboard</title>
-<link href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css rel=stylesheet>
+<link href=https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css rel=stylesheet>
 <link href=/Content/AssetsBS3/examples/starter-template.css rel=stylesheet>
 <!--[if lt IE 9]>
 <script src=~/Scripts/AssetsBS3/ie8-responsive-file-warning.js>
@@ -24,11 +24,15 @@ h1 {text-align:center;color:white}
 body {background-image:url("http://news.filehippo.com/wp-content/uploads/2013/01/Dna_wallpapers_152.jpg");
 background-size:100%;
 background-repeat:no-repeat;}
-table tr:nth-child(even) {
-    background-color: #eee;
+table tr:nth-child(even) 
+{
+text-align:center;
+background-color: #eee;
 }
-table tr:nth-child(odd) {
-    background-color: #fff;
+table tr:nth-child(odd) 
+{
+text-align:center;    
+background-color: #fff;
 }
 table, th, td {
 border: 2px transparent;
@@ -38,30 +42,36 @@ text-align:center;
 }
 th, td {padding:15px;}
 </style>
+
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Dream Challenge</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="leaderboard_template.html">Leader Board</a>
+      </li>
+<!--
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+-->
+    </ul>
+
+  </div>
+</nav>
 <br>
 <br>
 <h1>Dream Challenge Leaderboard</h1>
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role=navigation>
-<div class=container>
-<div class=navbar-header>
-<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false aria-controls=navbar>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span>
-<span class=icon-bar></span>
-<span class=icon-bar></span> 
-</button>
-<a class=navbar-brand href=#>Dream Challenge Leaderboard</a></div>
-<div id=navbar class="collapse navbar-collapse">
-<ul class="nav navbar-nav">
-<li ><a href=index.html>Home</a>
-<li class=active><a href=#Leaderboard>Leaderboard</a>
-<li><a href=#Logout>Log out</a>
-</ul></div></div></nav><div class=container><div class=starter-template>
-<!--
-<p class=lead><br></div></div><script src=https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js></script><script src=/Scripts/AssetsBS3/ie10-viewport-bug-workaround.js></script>
--->
-<table style="width:100%">
+<table align="center" style="width:80%">
 <tr>
         <th style="width:3px;">Rank</th>
         <th>Team Name</th>
@@ -120,27 +130,35 @@ th, td {padding:15px;}
 <br>
 <br>
 <form action="get_file.php" method="post">
-    
-    <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-default">Team Name</span>
+<div align="center" style="width:100%;">
+<!-- 輸入隊名 -->
+<div class="input-group mb-3" style="width:40%;">
+  <div class="input-group-prepend" >
+    <span class="input-group-text" id="basic-addon1" text-align:center;">Team Name</span>
   </div>
-  <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  <input type="text" class="form-control" placeholder="Enter Your Team Name" aria-label="TeamName" aria-describedby="basic-addon1">
 </div>
-    
-<h3 style="color:white">Input your Team Name:<br></h3>
-<p style="color:white">
-<input type="text" name="textline" size="30" style="color:black">
-</p>
-<h3 style="color:white">Please specify a file, or a set of files:<br></h3>
-<p style="color:white">
-<input type="file" name="datafile" size="40" style="color:white">
-</p>
-    
-<div>
-    <button type="submit" class="btn btn-success btn-sm">Send</button>
+<!-- 輸入隊名 -->
+<!-- 上傳檔案 -->
+
+<div class="input-group" style="width:40%;">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  	</div>
+  	<div class="custom-file">
+    	<input type="file" class="custom-file-input" id="inputGroupFile01"
+      aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" style="text-align:left" for="inputGroupFile01" >Choose file</label>
+  	</div>
+	</div>
 </div>
-         
+<!-- 上傳檔案 -->
+
+<div align="center" style="width:100%" >
+<br>    
+<button type="submit" style="width:25%;" class="btn btn-outline-light btn-lg">Send</button>
+</div>
+</div>         
 
 </form>
     
