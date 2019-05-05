@@ -1,167 +1,159 @@
-<!DOCTYPE html><html lang=en>
-<head>
-<meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge">
-<meta name=viewport content="width=device-width, initial-scale=1">
-<meta name=description content="">
-<meta name=author content="">
-<link rel=icon href=/Content/AssetsBS3/img/favicon.ico>
-<title>Dream Challenge Leaderboard</title>
-<link href=https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css rel=stylesheet>
-<link href=/Content/AssetsBS3/examples/starter-template.css rel=stylesheet>
-<!--[if lt IE 9]>
-<script src=~/Scripts/AssetsBS3/ie8-responsive-file-warning.js>
-</script><![endif]-->
-<script src=/Scripts/AssetsBS3/ie-emulation-modes-warning.js>
-</script>
-<!--[if lt IE 9]>
-<script src=https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js>
-</script>
-<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js>
-</script>
-<![endif]-->
-<style>
-h1 {text-align:center;color:white}
-body {background-image:url("http://news.filehippo.com/wp-content/uploads/2013/01/Dna_wallpapers_152.jpg");
-background-size:100%;
-background-repeat:no-repeat;}
-table tr:nth-child(even) 
-{
-text-align:center;
-background-color: #eee;
-}
-table tr:nth-child(odd) 
-{
-text-align:center;    
-background-color: #fff;
-}
-table, th, td {
-border: 2px transparent;
-border-collapse:collapse;
-color:black;
-text-align:center;
-}
-th, td {padding:15px;}
-</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Starter Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <style>
+      body {
+ background-image: url("https://i.imgur.com/mb2CZN2.jpg");
+ background-color: #cccccc; background-size:100%;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="learderboard_template.html">Dream Challenge Leaderboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Dream Challenge Leaderboard</a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="leaderboard_template.html">Leader Board</a>
-      </li>
-<!--
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
--->
-    </ul>
-
+        <a class="nav-link" href="leaderboar_template.html">Leaderboard</a>
+      </li> 
+   </ul>
   </div>
 </nav>
+
+<main role="main" class="container">
+<br><br><br><br>
+<h1 align="center">Dream Challenge Leaderboard</h1>
 <br>
-<br>
-<h1>Dream Challenge Leaderboard</h1>
-<table align="center" style="width:80%">
-<tr>
-        <th style="width:3px;">Rank</th>
-        <th>Team Name</th>
-        <th>P score</th>
-        <th>S score</th>
-        <th>PS AVG</th>
-        <th>entries</th>
-        <th>Last submission Time</th>
-</tr>
-<tr>
-        <th style="width:3px;">1</th>
-        <td>team1</td>
-        <td>0.2</td>
-        <td>0.3</td>
-        <td>0.25</td>
-        <td>4</td>
-        <td>Fri, 10 Jul 2015 05:06:10</td>
-</tr>
-<tr>
-        <th style="width:3px;">2</th>
-        <td>team2</td>
-        <td>0.1</td>
-        <td>0.4</td>
-        <td>0.25</td>
-        <td>21</td>
-        <td>Fri, 10 Jul 2015 05:06:10</td>
-</tr>
-<tr>
-        <th style="width:3px;">3</th>
-        <td>team1</td>
-        <td>0.2</td>
-        <td>0.3</td>
-        <td>0.25</td>
-        <td>4</td>
-        <td>Fri, 10 Jul 2015 05:06:10</td>
-</tr>
-<tr>
-        <th style="width:3px;">4</th>
-        <td>team2</td>
-        <td>0.1</td>
-        <td>0.4</td>
-        <td>0.25</td>
-        <td>21</td>
-        <td>Fri, 10 Jul 2015 05:06:10</td>
-</tr>
-<tr>
-        <th style="width:3px;">5</th>
-        <td>team3</td>
-        <td>0.2</td>
-        <td>0.3</td>
-        <td>0.25</td>
-        <td>23</td>
-        <td>Fri, 10 Jul 2015 05:06:10</td>
-</tr>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Rank</th>
+      <th scope="col">Team Name</th>
+      <th scope="col">P Score</th>
+      <th scope="col">S Score</th>
+      <th scope="col">PS AVG</th>
+      <th scope="col">entries</th>
+      <th scope="col">Last Submission Time</th>
+
+    </tr>
+  </thead>
+  <tbody>
+       <tr>
+      <th scope="col">1</th>
+      <th scope="col">Team A</th>
+      <th scope="col">0.2</th>
+      <th scope="col">0.1</th>
+      <th scope="col">0.15</th>
+      <th scope="col">4</th>
+      <th scope="col">Fri, 10 Jul 2015 05:06:10Time</th>
+
+    </tr>
+   <tr>
+      <th scope="col">1</th>
+      <th scope="col">Team B</th>
+      <th scope="col">0.2</th>
+      <th scope="col">0.3</th>
+      <th scope="col">0.25</th>
+      <th scope="col">21</th>
+      <th scope="col">Fri, 10 Jul 2015 05:06:10Time</th>
+    </tr>
+   <tr>
+      <th scope="col">1</th>
+      <th scope="col">Team E</th>
+      <th scope="col">0.2</th>
+      <th scope="col">0.4</th>
+      <th scope="col">0.3</th>
+      <th scope="col">3</th>
+      <th scope="col">Fri, 10 Jul 2015 05:06:10Time</th>
+
+    </tr>
+   <tr>
+      <th scope="col">1</th>
+      <th scope="col">Team D</th>
+      <th scope="col">0.2</th>
+      <th scope="col">0.42</th>
+      <th scope="col">0.31</th>
+      <th scope="col">22</th>
+      <th scope="col">Fri, 10 Jul 2015 05:06:10Time</th>
+    </tr>
+   <tr>
+      <th scope="col">1</th>
+      <th scope="col">Team C</th>
+      <th scope="col">0.2</th>
+      <th scope="col">0.5</th>
+      <th scope="col">0.35</th>
+      <th scope="col">16</th>
+      <th scope="col">Fri, 10 Jul 2015 05:06:10Time</th>
+    </tr>
+  </tbody>
 </table>
-<br>
-<br>
-<form action="get_file.php" method="post">
+
+<br><br><br>
+
 <div align="center" style="width:100%;">
-<!-- 輸入隊名 -->
-<div class="input-group mb-3" style="width:40%;">
-  <div class="input-group-prepend" >
-    <span class="input-group-text" id="basic-addon1" text-align:center;">Team Name</span>
-  </div>
-  <input type="text" class="form-control" placeholder="Enter Your Team Name" aria-label="TeamName" aria-describedby="basic-addon1">
-</div>
-<!-- 輸入隊名 -->
-<!-- 上傳檔案 -->
 
-<div class="input-group" style="width:40%;">
+<div class="input-group" style="width:50%;"  >
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-  	</div>
-  	<div class="custom-file">
-    	<input type="file" class="custom-file-input" id="inputGroupFile01"
-      aria-describedby="inputGroupFileAddon01">
-    <label class="custom-file-label" style="text-align:left" for="inputGroupFile01" >Choose file</label>
-  	</div>
-	</div>
+    <span class="input-group-text" id="addon-wrapping">Team Name</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Enter your Team Name" aria-label="Username" aria-describedby="addon-wrapping">
 </div>
-<!-- 上傳檔案 -->
-
-<div align="center" style="width:100%" >
-<br>    
-<button type="submit" style="width:25%;" class="btn btn-outline-light btn-lg">Send</button>
+<br>
+<div class="input-group" style="width:50%;">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+    <label class="custom-file-label" for="inputGroupFile04" style="color:grey;">Choose file</label>
+  </div>
+  <div class="input-group-append">
+   
+  </div>
 </div>
-</div>         
+<br>
+<button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04" style="width:25%;" >SEND</button>
 
-</form>
-    
-    
+</div>
+
+</main><!-- /.container -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
